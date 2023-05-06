@@ -1,0 +1,29 @@
+defaultTasks 'build'
+
+subprojects {
+    apply plugin: 'java'
+
+    group = 'ca.sperrer.p0t4t0sandwich'
+    version = '1.0.0'
+
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+
+    tasks.withType(JavaCompile) {
+        options.encoding = 'UTF-8'
+    }
+
+    repositories {
+        mavenCentral()
+
+        // Bukkit/Bungee
+        maven {
+            name = "spigotmc-repo"
+            url = "https://hub.spigotmc.org/nexus/content/repositories/snapshots/"
+        }
+        maven {
+            name = "sonatype"
+            url = "https://oss.sonatype.org/content/groups/public/"
+        }
+    }
+}

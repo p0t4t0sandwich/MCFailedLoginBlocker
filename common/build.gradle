@@ -1,0 +1,19 @@
+plugins {
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
+}
+
+dependencies {
+
+}
+
+shadowJar {
+    archiveFileName = 'common.jar'
+
+    dependencies {
+
+    }
+}
+
+artifacts {
+    archives shadowJar
+}

@@ -1,0 +1,4 @@
+name: MCFailedLoginBlocker
+version: '${version}'
+main: ca.sperrer.p0t4t0sandwich.mcfailedloginblocker.BukkitMain
+api-version: 1.19

@@ -1,0 +1,4 @@
+name: MCFailedLoginBlocker
+version: '1.0.0'
+main: ca.sperrer.p0t4t0sandwich.mcfailedloginblocker.MCFailedLoginBlocker
+api-version: 1.19
